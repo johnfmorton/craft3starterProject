@@ -51,9 +51,6 @@ mix.postCss("./src/styles.css", "web/static/css", [tailwindcss("./tailwind.js")]
         urls: [
             { url: '', template: 'home' },
             { url: 'about', template: 'about' },
-            // { url: '/', template: 'index-critical.min.css' },
-            // { src: 'http://jmx2.jfm/', dest: 'index_critical.min.css' },
-            // { src: 'about', dest: 'about_critical.min.css' }
         ],
         options: {
             minify: true,
