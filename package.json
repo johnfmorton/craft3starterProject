@@ -1,0 +1,36 @@
+{
+  "name": "jmx2craft3",
+  "version": "1.0.0",
+  "description": "JMX2 site built on Craft 3",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnfmorton/jmx2craft.git"
+  },
+  "keywords": [
+    "craft"
+  ],
+  "author": "John F Morton <john@johnfmorton>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnfmorton/jmx2craft/issues"
+  },
+  "homepage": "https://github.com/johnfmorton/jmx2craft#readme",
+  "devDependencies": {
+    "glob-all": "^3.1.0",
+    "html-critical-webpack-plugin": "^1.1.0",
+    "laravel-mix": "^2.1.11",
+    "laravel-mix-criticalcss": "^0.1.2",
+    "laravel-mix-purgecss": "^2.0.0",
+    "purgecss-webpack-plugin": "^0.22.0",
+    "tailwindcss": "^0.5.2"
+  },
+  "dependencies": {}
+}

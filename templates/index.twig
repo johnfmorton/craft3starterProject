@@ -1,0 +1,43 @@
+{% extends "_base/_layout" %}
+
+{% block content %}
+    <div class="container mx-auto max-w-md pb- mt-8 mb-8">
+<h1 class="pb-8">An starting point for Craft CMS 3 development.</h1>
+
+    <p class="pb-4">At this point in the repository wWe have an ideal set up to begin work on the site.</p>
+
+    <p class="pb-4">The package file has a number of scripts already configured.</p>
+
+    <ul>
+        <li class="pb-4"><span class="font-mono text-grey-darkest">npm run dev</span> : Build out the JS and CSS in development form 1 time.</li>
+        <li class="pb-4"><span class="font-mono text-grey-darkest">npm run watch</span> : Rebuild JS and CSS in development on file changes in the CSS and JS.</li>
+        <li class="pb-4"><span class="font-mono text-grey-darkest">npm run production</span> : Build out the JS and purged CSS and Critcal CSS in production form 1 time.</li>
+    </ul>
+
+    <p class="pb-4">The workflow is built in Laravel Mix. You can see the set up in the webpack.mix.js file.</p>
+
+    <p class="pb-4">In the "templates" folder after running production, you will see a "criticalCSS" folder for the pages that are set up in the webpack.mix.js folder. You will probably need to set up more specific pages to generate critical CSS for beyond the home page and the about page.</p>
+
+    <p class="pb-8">So far the critical CSS has <em>not</em> been inlined in the templates. You still need to do that.</p>
+
+    <h2 class="pb-6">The CSS is set up to use Tailwind CSS</h2>
+
+    <p class="pb-4">The "tailwind.js" file in this root directory is the default version of this file. You will probably want to customize for the site.</p>
+
+    </div>
+
+    <div class="bg-white mx-auto max-w-sm shadow-lg rounded-md overflow-hidden">
+        <div class="sm:flex sm:items-center px-6 py-4">
+            <img class="block h-16 sm:h-24 rounded-full mx-auto mb-4 sm:mb-0 sm:mr-4 sm:ml-0" src="https://avatars2.githubusercontent.com/u/119723?s=460&v=4" alt="John Morton avatar from GitHub">
+            <div class="text-center sm:text-left sm:flex-grow">
+                <div class="mb-4">
+                    <p class="text-xl leading-tight">John Morton</p>
+                    <p class="text-sm leading-tight text-grey-dark">JMX2 Inc.</p>
+                </div>
+                <div>
+                    <button class="text-xs font-semibold rounded-full px-4 py-1 leading-normal bg-white border border-purple text-purple hover:bg-purple hover:text-white">Click for nothing to happen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
